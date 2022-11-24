@@ -5,6 +5,7 @@ Aplicação desenvolvida para praticar conceitos de Firebase, como Authenticatio
 ## Descrição 
 
 O site possui uma página de login, no qual é possível se autenticar utilizando uma conta Google ou se cadastrar utilizando email e senha. Caso o usuário consiga se autenticar, será redirecionado para a página inicial que possui uma barra de navegação. No menu é possível navegar para a home, para o painel de controle ou fazer logout. Aqui foi utilizado o Authentication do Firebase.
+
 Na página de painel de controle há uma tabela que lista todos os colaboradores cadastrados, possui as opções em ícones para remover, editar ou ver mais detalhes de um colaborador. A opção de editar redireciona para uma página que carrega os dados do colaborador e possibilita atualizar esses dados. O ícone de detalhes abre um dialog que exibe mais informações do colaborador. No final da página existe um botão que permite adicionar um novo colaborador. Para realizar essas operações de CRUD foram utilizadas as ferramentas do Firebase de Database e Storage que armazenam os dados inseridos.
 
 ## Tecnologias
