@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+}
+
+.table-container{
+    height: 70vh;
+    overflow: auto;
+}
+
+.avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.btn-new{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    background-color: #000000;
+}

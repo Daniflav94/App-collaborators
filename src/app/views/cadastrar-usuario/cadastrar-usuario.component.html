@@ -1,0 +1,15 @@
+<div id="login-container">
+    <div class="login-form">
+        <h1>Cadastre-se</h1>
+        <button (click)="signInGoogle()" class="btn-google">
+            <img src="../../../assets/icons/icons8-google-logo.svg" alt="Logo Google" width="20px">
+            <p class="titulo-google">Fazer login com o Google</p>
+        </button>
+        <form [formGroup]="formCadastro">
+            <input type="email" placeholder="E-mail" formControlName="email">
+            <input type="password" placeholder="Senha" formControlName="senha">
+            <button (click)="createUserEmailAndPassword()" class="btn" >Cadastrar</button>
+        </form>
+        <span><a routerLink="/login">Voltar para Login</a></span>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+<app-header></app-header>
+<div class="container">
+    <form #formEdit="ngForm">
+        <h1>Editar Colaborador</h1>
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input type="text" matInput placeholder="Nome" name="nome" [(ngModel)]="colaborador.nome" required>
+        </mat-form-field>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>CPF</mat-label>
+                <input type="text" matInput placeholder="CPF" name="cpf" [(ngModel)]="colaborador.cpf" required>
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Data de Nascimento</mat-label>
+                <input type="date" matInput placeholder="Data de Nascimento" name="dataNascimento" [(ngModel)]="colaborador.dataNascimento" required>
+            </mat-form-field>
+        </div>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Cargo</mat-label>
+                <input type="text" matInput placeholder="Cargo" name="cargo" [(ngModel)]="colaborador.cargo" required>
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Setor</mat-label>
+                <input type="text" matInput placeholder="Setor" name="setor" [(ngModel)]="colaborador.setor" required>
+            </mat-form-field>
+        </div>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Estado</mat-label>
+                <input type="text" matInput placeholder="Estado" name="estado" [(ngModel)]="colaborador.estado" required>
+            </mat-form-field>
+    
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Cidade</mat-label>
+                <input type="text" matInput placeholder="Cidade" name="cidade" [(ngModel)]="colaborador.cidade" required>
+            </mat-form-field>
+        </div>
+
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input type="email" matInput placeholder="E-mail" name="email" [(ngModel)]="colaborador.email" required>
+        </mat-form-field>
+
+        <div class="double-width">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Remuneração (R$)</mat-label>
+                <input type="number" matInput placeholder="Remuneração (R$)" name="remuneracao" [(ngModel)]="colaborador.remuneracao" required min=0>
+            </mat-form-field>
+            <div  class="file">
+                <label for="foto">Selecione uma foto</label> 
+                <input type="file" class="upload-photo" (change)="uploadFile($event)">
+                <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+            </div>
+             
+            
+        </div>
+        <div class="double-width" >
+            <button class="full-width btn-submit" mat-raised-button (click)="editarColaborador(formEdit)">Atualizar</button>
+            <a class="full-width btn-close"mat-raised-button routerLink="/dashboard">Cancelar</a>
+        </div>
+
+    </form>
+</div>
