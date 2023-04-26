@@ -15,9 +15,6 @@ Na página de painel de controle há uma tabela que lista todos os colaboradores
 - TypeScript
 - HTML, CSS
 
-## Link da aplicação:
-https://app-colaboradores-9201e.web.app
-
 ## Imagens
 
 ![1](https://user-images.githubusercontent.com/99519903/203852727-f136c293-40d1-402e-bece-19683633941a.jpg)
